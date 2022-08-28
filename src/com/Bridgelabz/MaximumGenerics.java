@@ -1,18 +1,20 @@
 package com.Bridgelabz;
 
 public class MaximumGenerics {
-		/**
-		 * @param x taking first value
-		 * @param y taking second value
-		 * @param z taking third value
-		 * @return returning the result which is maximum
-		 */
-		public static Float maxfloat(Float x, Float y, Float z) {
-			Float max = x;
-			if (y.compareTo(max) > 0 && y.compareTo(z) > 0)
-				max = y;
-			else if (z.compareTo(max) > 0)
-				max = z;
-			return max;
-		}
+	/**
+	 * @param str1 taking first value
+	 * @param str2 taking second value
+	 * @param str3 taking third value
+	 * @return returning the result which is maximum
+	 */
+	public static String findStringMax(String str1, String str2, String str3) {
+		String max = str1;
+		
+		if (str2.compareTo(max) > 0 && str2.compareTo(str3) > 0)
+			max = str2;
+		
+		else if (str3.compareTo(max) > 0)
+			max = str3;
+		return max;
+	}
 }

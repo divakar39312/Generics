@@ -11,10 +11,10 @@ public class GenericsMain extends MaximumGenerics {
 	 */
 	public static void main(String[] args) {
 		System.out.println("Maximum of three number");
-		// Taking 3 Float values from user
-		Float x = scanner.nextFloat();
-		Float y = scanner.nextFloat();
-		Float z = scanner.nextFloat();
-		System.out.println("Max: " + maxfloat(x, y, z));
+		// Taking 3 String values from user
+		String str1 = scanner.next();
+		String str2 = scanner.next();
+		String str3 = scanner.next();
+		System.out.println("Max: " + findStringMax(str1, str2, str3));
 	}
 }
