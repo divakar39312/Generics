@@ -1,6 +1,17 @@
 package com.Bridgelabz;
 
 public class MaximumGenerics<T extends Comparable<T>> {
+	T x;
+	T y;
+	T z;
+
+	
+	public MaximumGenerics(T x, T y, T z) {
+		super();
+		this.x = x;
+		this.y = y;
+		this.z = z;
+	}
 	/**
 	 * 
 	 * @param <T>
@@ -18,5 +29,4 @@ public class MaximumGenerics<T extends Comparable<T>> {
 			max = z;
 		}
 		return max;
-	}
-}
+	}}
