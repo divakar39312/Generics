@@ -26,4 +26,6 @@ public class MaximumGenerics<T extends Comparable<T>> {
 		}
 		return max;
 	}
-}
+	 public static <T> void printMax(T w,T x,T y,T z, T max){
+	        System.out.println(max);
+	    }}
