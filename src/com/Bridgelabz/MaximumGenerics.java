@@ -1,20 +1,29 @@
 package com.Bridgelabz;
 
-public class MaximumGenerics {
+public class MaximumGenerics<T extends Comparable<T>> {
+
 	/**
-	 * @param str1 taking first value
-	 * @param str2 taking second value
-	 * @param str3 taking third value
-	 * @return returning the result which is maximum
+	 * @param <T>
+	 * @param w   - Taking the first value
+	 * @param x   - Taking the second value
+	 * @param y   - Taking the third value
+	 * @param z   - Taking the fourth value
+	 * @return maximum of 4 values
 	 */
-	public static String findStringMax(String str1, String str2, String str3) {
-		String max = str1;
+	public static <T extends Comparable<T>> T toPrintMax(T w, T x, T y, T z) {
+		T max = w;
 		
-		if (str2.compareTo(max) > 0 && str2.compareTo(str3) > 0)
-			max = str2;
+		if (x.compareTo(max) > 0 && x.compareTo(y) > 0 && x.compareTo(z) > 0) {
+			max = x;
+		}
 		
-		else if (str3.compareTo(max) > 0)
-			max = str3;
+		if (y.compareTo(max) > 0 && y.compareTo(x) > 0 && x.compareTo(z) > 0) {
+			max = y;
+		}
+		
+		if (z.compareTo(max) > 0 && z.compareTo(x) > 0 && z.compareTo(y) > 0) {
+			max = z;
+		}
 		return max;
 	}
 }
